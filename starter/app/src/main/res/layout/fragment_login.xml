@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- we used layout to confirm binding -->
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A9EA7"
+        tools:context=".LoginFragment">
+
+        <TextView
+            android:id="@+id/program_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/shoe_store"
+            android:textColor="#FAFAFA"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="460sp"
+            android:layout_marginBottom="212dp"
+            android:text="@string/password_text"
+            android:textColor="#000106"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410sp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/email_text"
+            android:textColor="#000106"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="400sp"
+            android:layout_marginEnd="80dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+
+            android:textColor="#D5AFAF"
+            android:textColorHint="#212121"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="450sp"
+            android:layout_marginEnd="12dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="#D5AFAF"
+            android:textColorHint="#212121"
+            tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="63dp"
+            android:backgroundTint="#0F1858"
+            android:text="@string/login_btn"
+            android:textColor="#FAFAFA"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/Register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="63dp"
+            android:backgroundTint="#0F1858"
+            android:text="@string/register_btn"
+            android:textColor="#FAFAFA"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    </FrameLayout>
+</layout>

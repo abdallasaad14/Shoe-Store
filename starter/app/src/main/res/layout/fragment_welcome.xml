@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- we used layout to confirm binding -->
+<!-- we used liner layout because we have not many views-->
+
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A9EA7"
+    android:orientation="vertical"
+>
+
+
+    <TextView
+        android:id="@+id/welcome_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/akronim"
+        android:gravity="center_horizontal"
+        android:text="@string/welcomeTitle"
+        android:textColor="#0B002C"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/welcome_tittle_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="@string/welcomeTitle2"
+        android:fontFamily="@font/alfa_slab_one"
+        android:textColor="#0B002C"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#0F1858"
+        android:text="@string/next_btn"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- we used layout to confirm binding -->
+<!-- we used frame data -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShoeDetailesFragment">
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.udacity.shoestore.ShoeListViewModel"/>
+    </data>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A9EA7"    >
+
+    <TextView
+        android:id="@+id/shoe_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="#00FFFFFF"
+
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center_horizontal"
+        android:text="@string/Shoe_detail"
+        android:textColor="#0B002C"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/shoeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/shoe_name"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/shoeCompany"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_marginTop="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shoe_company" />
+
+    <TextView
+        android:id="@+id/shoeSize"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_marginTop="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shoe_size" />
+
+    <TextView
+        android:id="@+id/shoeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_marginTop="400dp"
+        android:text="@string/shoe_description" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@={view.name}"
+        android:ems="10"
+        android:hint="@string/shoe_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="@string/shoe_company"
+        android:layout_marginStart="150dp"
+        android:text="@={view.company}"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/edt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="350dp"
+        android:hint="@string/shoe_size"
+        android:text="@={view.size}"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="400dp"
+        android:text="@={view.description}"
+        android:hint="@string/shoe_description"
+        android:ems="10"
+        android:inputType="textPersonName"
+       />
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="63dp"
+        android:backgroundTint="#0F1858"
+        android:text="@string/add_btn"
+        android:textColor="#FAFAFA"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="63dp"
+        android:backgroundTint="#0F1858"
+        android:text="@string/cancel_btn"
+        android:textColor="#FAFAFA"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+</FrameLayout>
+</layout>

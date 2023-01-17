@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- we used liner layout because we have not many views-->
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InstructionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A9EA7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/akronim"
+            android:gravity="center_horizontal"
+            android:text="@string/InstructionsTittle"
+            android:textColor="#0B002C"
+            android:textSize="50sp" />
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:text="@string/Instructions"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="#0B002C"
+            android:textSize="40sp" />
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#0F1858"
+            android:text="@string/start_btn"
+            android:textColor="#FFFFFF" />
+
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShoeListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#3A9EA7">
+
+        <ScrollView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="770dp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            liner layout because scrollview can contain just one view
+            <LinearLayout
+                android:id="@+id/viewData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="41dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="350dp"
+            android:clickable="true"
+            android:contentDescription="@string/add_button"
+            android:focusable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="#0F1858"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,RedundantDescriptionCheck"
+            tools:layout_editor_absoluteX="332dp"
+            tools:layout_editor_absoluteY="613dp" />
+
+    </LinearLayout>
+</layout>
